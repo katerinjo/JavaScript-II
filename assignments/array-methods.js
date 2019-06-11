@@ -82,6 +82,12 @@ console.log(ticketPriceTotal);
 
 // Problem 1
 
+console.log(runners.filter(runner => runner.donation >= 200))
+
 // Problem 2
 
+console.log(runners.map(runner => runner.first_name.concat(" ", runner.last_name)))
+
 // Problem 3
+
+console.log(runners.reduce((prev, current) => current.donation > prev.donation ? current : prev).id)
