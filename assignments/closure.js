@@ -1,6 +1,23 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function bugFill(hero) {
+  let totalBugs = 0
+  function moreBugs(n) {
+    totalBugs += n;
+    console.log("Oh no! Skitter the supervillain filled", hero, "with", n, "bugs!")
+    console.log(hero, "now contains", totalBugs, "bugs!")
+  }
+  return moreBugs
+}
+
+const alexandria = bugFill("Alexandria")
+const defiant = bugFill("Defiant")
+
+alexandria(1)
+alexandria(20)
+alexandria(300)
+defiant(0)
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
